@@ -1,0 +1,512 @@
+/* RESETS START */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.849);
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+h2,
+h3 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* RESETS END */
+
+#page_content p {
+  font-family: "Comfortaa", cursive;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+#intro_container a:link {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Comfortaa", cursive;
+  color: rgba(255, 255, 255, 0.849);
+  border: 1px solid rgba(255, 255, 255, 0.849);
+  border-radius: 20px;
+  padding: 12.5px;
+  margin: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#intro_container a:visited,
+#mouse_container a:visited,
+#footer_info a:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
+}
+
+#intro_container a:hover,
+#mouse_container a:hover {
+  color: black;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.849);
+  border-radius: 20px;
+}
+
+#footer_info a:link {
+  font-size: 13px;
+  font-family: "Comfortaa", cursive;
+}
+
+#mouse_container a:link {
+  font-size: 10px;
+  text-decoration: none;
+  font-family: "Comfortaa", cursive;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.849);
+  background-color: rgba(255, 255, 255, 0.849);
+  border-radius: 20px;
+  padding: 12.5px;
+  margin: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#proposal_details img {
+  width: 60vw;
+}
+#mouse_container {
+  /* border: 1px solid red; */
+  height: 40px;
+  margin-top: 30px;
+  align-items: right;
+}
+
+/* #mouse_on {
+  display: block;
+}
+
+#mouse_off {
+  display: none;
+} */
+
+canvas {
+  display: block;
+}
+
+iframe {
+  width: 560px;
+  height: 300px;
+}
+
+.transition {
+  transition: display 0.5s ease-in 0.3s;
+}
+
+#artist_statement h1 {
+  color: #e28db4;
+}
+
+#proposal_summary h1 {
+  color: #f4d07f;
+}
+
+#proposal_details h1 {
+  color: #b29ecc;
+}
+
+#key_activities h1 {
+  color: #e28db4;
+}
+
+#budget h1 {
+  color: #f4d07f;
+}
+/* HAM BURGER MENU */
+
+#hamburger_menu {
+  display: none;
+}
+#hamburger_links a {
+  display: none;
+}
+
+#hamburger_icon img {
+  display: none;
+}
+
+#cross {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+#pageone_container {
+  z-index: 999;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#pageone_container svg {
+  display: flex;
+  animation: 2s ease infinite scroll_down;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-self: flex-start;
+}
+
+@keyframes scroll_down {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
+#header {
+  z-index: 1;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+#header_text {
+  margin-left: 4.5vw;
+}
+
+#mainvideo_container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#mainvideo_container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.quote_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+#quotes {
+  font-family: "Varela", sans-serif;
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+}
+
+#connect_text {
+  position: relative;
+  height: 80px;
+  border: 1px solid red;
+  width: 100%;
+  text-align: center;
+}
+
+#connect_text h3 {
+  font-size: 50px;
+}
+
+#title_image {
+  height: 200px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page_content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 100;
+}
+
+#page_content::-webkit-scrollbar {
+  display: none;
+}
+
+#title_container {
+  width: 100%;
+}
+
+#main_container {
+  position: relative;
+  width: 89vw;
+  text-align: left;
+  margin-top: 60px;
+}
+
+#intro_links {
+  margin: 50px 0 0 0;
+  z-index: 100;
+}
+
+#header_text {
+  font-family: "Comfortaa", cursive;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+#header_links {
+  position: absolute;
+  right: 0;
+  padding-right: 40px;
+  transition: 1s;
+  margin-right: 4vw;
+}
+
+#header_links img {
+  width: 20px;
+}
+
+#header a:link {
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#headshot {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header_text a:link {
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
+}
+
+#header_text a:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
+}
+
+#header_text a:hover {
+  font-size: 16px;
+}
+
+#proposal_details a:link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#proposal_details a:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
+}
+
+#proposal_details a:hover {
+  font-size: 16px;
+}
+
+#canvas1 {
+  z-index: 200;
+  width: 400vw;
+  height: 100vh;
+}
+
+.detail_videos {
+  width: 50vw;
+}
+
+.items_center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#key_activities img {
+  width: 80vw;
+}
+
+#budget img {
+  width: 80vw;
+}
+/* FOOTER */
+
+#footer_container {
+  position: relative;
+
+  color: white;
+  margin-bottom: 60px;
+}
+
+#footer_info a {
+  text-decoration: none;
+}
+#footer_info a p {
+  color: white;
+  font-size: 18px;
+}
+
+#footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer_insta,
+#footer_behance {
+  width: 40px;
+  margin: 12px;
+}
+
+#footer_social {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer_caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+  #intro_container a:link {
+    display: none;
+  }
+
+  #canvas1 {
+    display: none;
+  }
+
+  #title_image {
+    margin: 20px;
+    height: 0px;
+  }
+
+  #quote {
+    letter-spacing: 2.5px;
+  }
+
+  #header_links {
+    display: none;
+  }
+
+  #header {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* HAM BURGER MENU */
+
+  #hamburger_menu {
+    display: block;
+  }
+
+  .hamburger_icon img {
+    z-index: 10;
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+    transform: translateY(-50%);
+  }
+
+  .hamburger_img {
+    width: 30px;
+    position: absolute;
+  }
+
+  #cross {
+    z-index: 10;
+    display: none;
+    width: 20px;
+  }
+
+  #hamburger {
+    z-index: 10;
+    display: block;
+    width: 30px;
+    /* height: 50px; */
+  }
+
+  #hamburger_links {
+    display: none;
+    position: absolute;
+    width: 1000px;
+    background-color: #000000;
+    padding: 60px;
+    border-radius: 20px;
+    margin-top: 140px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hamburger_links a {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #hamburger_links a:link {
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Comfortaa", cursive;
+    color: rgba(255, 255, 255, 0.849);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+
+  #hamburger_links a:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.849);
+  }
+
+  #hamburger_links a:hover {
+    font-size: 15px;
+  }
+
+  #mouse_container {
+    display: none;
+  }
+}

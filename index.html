@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connections</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="libraries/p5.min.js"></script>
+
+    <!-- 
+      Poster Colours
+    #F4D07F
+    #E28DB4
+    #B29ECC -->
+  </head>
+
+  <body onload="load()">
+    <div id="page_content">
+      <div id="pageone_container">
+        <div id="header">
+          <div id="header_text">
+            <a href="#mainvideo_container">
+              <p>connections</p>
+            </a>
+          </div>
+          <div id="header_links">
+            <a href="https://www.instagram.com/amagine_media/ "
+              ><img src="assets\instagram-2165.png" id="insta_img"
+            /></a>
+            <a href=" https://www.behance.net/aoifemcnamara1 "
+              ><img src="assets\behance-2161.png" id="behance_img"
+            /></a>
+          </div>
+
+          <div id="hamburger_menu">
+            <div class="hamburger_icon">
+              <a
+                class="transition"
+                href="javascript:void(0);"
+                onclick="showHamburgerMenu()"
+                ><img
+                  src="assets\hamburgerIcon.png"
+                  id="hamburger"
+                  class="hamburger_img"
+              /></a>
+              <a href="javascript:void(0);" onclick="hideHamburgerMenu()"
+                ><img
+                  src="assets\menuCross.png"
+                  id="cross"
+                  class="hamburger_img"
+              /></a>
+            </div>
+
+            <div id="hamburger_links">
+              <a href="#artist_statement" onclick="showArtist()"
+                >ARTIST STATEMENT</a
+              >
+
+              <a href="#proposal_summary" onclick="showSummary()"
+                >PROJECT PROPOSAL SUMMARY</a
+              >
+              <a href="#proposal_details" onclick="showDetails()"
+                >DETAILS OF PROPOSAL</a
+              >
+              <a href="#key_activities" onclick="showActivities()"
+                >KEY ACTIVITIES</a
+              >
+              <a href="#budget" onclick="showBudget()">BUDGET</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="mainvideo_container">
+          <video id="mainvideo" playsinline autoplay loop muted>
+            <source src="assets\website_mainvideo_5.mp4" type="video/mp4" />
+          </video>
+
+          <div class="quote_container">
+            <p id="quotes">
+              a project proposal for an interactive art and technology
+              installation that aims to engage the audience using interactive
+              media.
+            </p>
+          </div>
+        </div>
+
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg
+          fill="#ffffff"
+          height="800px"
+          width="800px"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 330 330"
+          xml:space="preserve"
+        >
+          <path
+            id="XMLID_225_"
+            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+          c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+          s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+          />
+        </svg>
+      </div>
+      <div id="mouse_container">
+        <a id="mouse_on" href="javascript:void(0);" onclick="mouseTurnOn()"
+          >INTERACTIVE MOUSE ON</a
+        >
+        <a id="mouse_off" href="javascript:void(0);" onclick="mouseTurnOff()"
+          >INTERACTIVE MOUSE OFF</a
+        >
+      </div>
+
+      <div id="intro_container">
+        <div id="intro_links">
+          <a href="#artist_statement" id="artist_button" onclick="showArtist()"
+            >ARTIST STATEMENT</a
+          >
+          <a
+            href="#proposal_summary"
+            id="summary_button"
+            onclick="showSummary()"
+            >PROJECT PROPOSAL SUMMARY</a
+          >
+          <a
+            href="#proposal_details"
+            id="details_button"
+            onclick="showDetails()"
+            >DETAILS OF PROPOSAL</a
+          >
+          <a
+            href="#key_activities"
+            id="activities_button"
+            onclick="showActivities()"
+            >KEY ACTIVITIES</a
+          >
+          <a href="#budget" id="budget_button" onclick="showBudget()">BUDGET</a>
+        </div>
+      </div>
+
+      <div id="main_container">
+        <div id="artist_statement">
+          <h1>ARTIST STATEMENT</h1>
+          <img src="assets\headshot.png" id="headshot" class="items_center" />
+          <p>
+            Aoife McNamara is a Videographer, Photographer and Visual Artist
+            from Cork, Ireland in the early stages of her artist career. As a
+            recent graduate of Creative Digital Media BA (Hons) from Munster
+            Technological University, she has honed her skills in video editing
+            and filmmaking through coursework and also through her professional
+            work and freelance experience, becoming advanced in software such as
+            Adobe Premiere Pro, Adobe Photoshop and Adobe After Effects.
+          </p>
+          <p>
+            With a passion for visual art and working with projectors and
+            interactive technologies, she connected her knowledge and skills
+            from her degree to explore using these technologies in an
+            interactive installation.
+          </p>
+          <p>
+            Aoife’s latest project, “connections”, focuses on engaging the
+            audience with technology and each other in a shared space. Audience
+            members are invited into the installation where their audio data and
+            hand movements are transformed into dynamic and colourful visual
+            imagery that are projected onto the walls and floor. The visual
+            output directly correlates to the audience size and volume levels.
+            The methodologies behind her work involves an iterative process
+            through thorough experiments where she explores the limits of her
+            skills working different softwares and devices to create an
+            interactive experience for the audience.
+          </p>
+        </div>
+        <div id="proposal_summary">
+          <h1>PROJECT PROPOSAL SUMMARY</h1>
+
+          <p>
+            This project “connections”, is an interactive art installation that
+            is generated by the audience's presence. The project aims to
+            highlight the idea that our once social spaces are changing and
+            becoming places of social collection, where people come together but
+            do not speak to each other. (Turkle, 2011, p.155) By using the
+            audience's presence and interactions it aims to highlight the idea
+            of using interactive technology as a collective rather than an
+            individual.
+          </p>
+          <p>
+            Each audience member is invited to step into the installation both
+            in the physical environment and the visual outputs. It uses
+            interactive technologies to collectively engage the audience in a
+            shared art piece where the audience’s input is the key factor.
+            Without the audience, the piece doesn’t show and the more audience
+            members there are, the more reactive and engaging the installation
+            becomes.
+          </p>
+          <p>
+            The installation will contain two main elements that capture the
+            audience's interactions and physical movements. Their audio data
+            will be transformed into visuals that are projected onto the floor
+            and the hand movements are tracked and projected onto the wall.
+          </p>
+          <p>
+            This proposal is for the production of this installation in its full
+            form that aims to be displayed in three art galleries in Ireland in
+            2024. The amount that is being requested is: €17731.64
+          </p>
+          <p><b>References</b></p>
+          <p>
+            <i
+              >Turkle, S. (2012). Alone together : why we expect more from
+              technology and less from each other. New York: Basic Books, A
+              Member Of The Perseus Books Group.
+            </i>
+          </p>
+        </div>
+        <div id="proposal_details">
+          <h1>DETAILS OF PROPOSAL</h1>
+          <h2><b>BACKGROUND</b></h2>
+          <p class="items_center">
+            Connections - “the state of being related to someone or something
+            else” -
+            <a
+              href=" https://dictionary.cambridge.org/dictionary/english/connection"
+              >Cambridge Dictionary</a
+            >
+          </p>
+          <p>
+            “For hundreds of thousands of years, humans only communicated in
+            person” and it is only just in the past fifty years we have started
+            communicating online. (Lieberman and Schroeder, 2020, p16)
+            Communication is one of “the most important factors shaping human
+            destiny,” however, our once communal spaces such as a cafe or the
+            park have become spaces of “social collection” where “people come
+            together but do not speak to each other.” (McFarlane, 2010, p.1;
+            Turkle, 2012, p.155) This shift in our society has created an
+            imbalance where we are still learning about the impacts that
+            technology has on our in person interactions with each other.
+          </p>
+          <p class="items_center">
+            “Technology should be enhancing our connection to others, not
+            replacing it.” - (CMHA, 2019)
+          </p>
+          <p>
+            Digital technology in our lives has proven to be excellent in many
+            different ways. Alongside social media it provided an outlet for
+            adolescents during COVID-19, which was fundamental to help youth
+            overcome the “stressful period and to limit psychological adverse
+            events related to the lockdown.” (Salzano et al., 2021) However,
+            despite its amazing qualities, in our personal relationships and in
+            our offline connections with others it has been shown that it can
+            have a negative effect on our relationships. (McDaniel and Coyne,
+            2016)
+          </p>
+          <p>
+            Recognising this shift in our society, this project is an
+            interactive environment that is displayed in a shared environment
+            where the audience is invited to interact both with each other and
+            the piece itself. It aims to give the audience a space to explore
+            ways in which interactive, digital technology can be used in a
+            shared environment, where the audience collectively contributes to
+            the visual output. Using visual arts as a medium, it uses software
+            to transform the audience's movement and audio data to create the
+            visuals for the piece which are then projected onto the floor and
+            the wall using two projectors.
+          </p>
+
+          <h2><b>TECHNICAL DETAILS</b></h2>
+          <p>
+            There are two main elements of interactive graphics that are
+            produced in this installation. The first is the audience’s audio
+            input. The audience’s audio levels are captured through microphones
+            around the room and brought into the software Touchdesigner. In real
+            time, the audio input is collected and used to create graphics that
+            are then projected onto the floor.
+          </p>
+
+          <div class="items_center">
+            <video class="detail_videos" playsinline autoplay loop muted>
+              <source src="assets\installation_audio.mp4" type="video/mp4" />
+            </video>
+            <p>
+              <i
+                >Video of colourful visuals that are influenced from the
+                audience's audio input</i
+              >
+            </p>
+          </div>
+
+          <p>
+            The second is the audience’s physical bodies, specifically their
+            hands. Using an Xbox Kinect, their right hand’s movement is tracked
+            and projected directly onto the wall where each audience member can
+            control their own circular bubble. When their bubbles overlap they
+            interact and merge together creating new colors and forms.
+          </p>
+
+          <div class="items_center">
+            <video class="detail_videos" playsinline autoplay loop muted>
+              <source
+                src="assets\installation_xboxKinect.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <p>
+              <i
+                >Video of colourful and dynamic visuals that are influenced by
+                the audience's hand movements</i
+              >
+            </p>
+          </div>
+          <p>
+            The project uses Touchdesigner to create the graphics with the
+            audience's input coming from Xbox Kinect’s v2 and microphones. The
+            interactive graphics are then projected on one wall and the floor
+            where the audience can interact with the project and immediately see
+            the results of their connections with each other.
+          </p>
+
+          <h2><b>INSTALLATION PLANS</b></h2>
+          <div class="items_center">
+            <img src="assets\TopDownView.png" alt="Top Down View" />
+            <img src="assets\SideView.png" alt="Side View" />
+          </div>
+
+          <h2><b>FINAL INSTALLATION</b></h2>
+          <p>
+            The video below is a virtual prototype of what this installation
+            would look like for the audience when they walk into the
+            installation space. They are met with the projections from two
+            projectors which cover one wall and one floor.
+          </p>
+
+          <div class="items_center">
+            <video class="detail_videos" playsinline autoplay loop muted>
+              <source
+                src="assets\installation_Fullinstallation.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <p>
+              <i>Video of the installation in it's full form</i>
+            </p>
+          </div>
+
+          <h2><b>EXPECTED RESULTS AND BENEFITS</b></h2>
+          <p>
+            As an artist whose interests and passions revolve around interactive
+            technology, the proposed project aims to share the feeling that an
+            immersive experience can have. It gives the audience a chance to
+            reflect on the power and impact that using digital technology has on
+            each other.
+          </p>
+
+          <p><b>References</b></p>
+          <p>
+            <i
+              >CMHA National. (2019). The importance of human connection.
+              Available at:
+              https://cmha.ca/the-importance-of-human-connection/#:~:text=But%20connecting%20with%20others%20is
+              [Accessed 6 Dec. 2022]
+            </i>
+          </p>
+          <p>
+            <i
+              >Lieberman, A. and Schroeder, J. (2020). Two social lives: How
+              differences between online and offline interaction influence
+              social outcomes. Current Opinion in Psychology, 31, pp.16–21.
+              Available at: https://doi.org/10.1016/j.copsyc.2019.06.022.
+              [Accessed 6 Dec. 2022].</i
+            >
+          </p>
+          <p>
+            <i
+              >McDaniel, B.T. and Coyne, S.M. (2016). ‘Technoference’: The
+              interference of technology in couple relationships and
+              implications for women’s personal and relational well-being..
+              Psychology of Popular Media Culture, 5(1), pp.85–98. Available at:
+              https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=5003&context=facpub
+              [Accessed 8 Dec. 2022]</i
+            >
+          </p>
+          <p>
+            <i
+              >Mcfarlane, D.A. (2010). Social Communication in a
+              Technology-Driven Society: A Philosophical Exploration of
+              Factor-Impacts and Consequences. American Communication Journal
+              Winter, [online] 12(12). Available at:
+              http://ac-journal.org/journal/pubs/2010/McFarlane.pdf. [Accessed 6
+              Dec. 2022].
+            </i>
+          </p>
+
+          <p>
+            <i
+              >Salzano, G., Passanisi, S., Pira, F., Sorrenti, L., La Monica,
+              G., Pajno, G.B., Pecoraro, M. and Lombardo, F. (2021). Quarantine
+              due to the COVID-19 pandemic from the perspective of adolescents:
+              the crucial role of technology. Italian Journal of Pediatrics,
+              47(1). doi:https://doi.org/10.1186/s13052-021-00997-7. [Accessed
+              11 May. 2023].</i
+            >
+          </p>
+
+          <p>
+            <i
+              >Turkle, S. (2012). Alone together : why we expect more from
+              technology and less from each other. New York: Basic Books, A
+              Member Of The Perseus Books Group.
+            </i>
+          </p>
+        </div>
+        <div id="key_activities">
+          <h1>KEY ACTIVITES</h1>
+          <p>
+            The key activities involved in the production of this project are
+            laid out over a six month period. In this time, there are six main
+            phases. These include finding an art space, building the
+            installation, testing and troubleshooting, implementation in the art
+            space, publicity and creating awareness of the project and the final
+            showcase.
+          </p>
+          <p class="items_center">
+            <img
+              src="assets\Proposed Plan.png"
+              alt="Key Activities Spreadsheet"
+            />
+          </p>
+        </div>
+
+        <div id="budget">
+          <h1>BUDGET</h1>
+          <img src="assets\budget.png" src="Budget" class="items_center" />
+        </div>
+      </div>
+
+      <div id="footer_container">
+        <div id="footer_caption">
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <div id="footer_text">
+          <div id="footer_social">
+            <a href="https://www.instagram.com/amagine_media/ "
+              ><img src="assets\instagram-2165.png" id="footer_insta"
+            /></a>
+            <a href=" https://www.behance.net/aoifemcnamara1 "
+              ><img src="assets\behance-2161.png" id="footer_behance"
+            /></a>
+          </div>
+          <div id="footer_info">
+            <a href="aoife.amcnamara@gmail.com"
+              ><p>aoife.amcnamara@gmail.com</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="canvas1"></div>
+
+    <script src="index.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

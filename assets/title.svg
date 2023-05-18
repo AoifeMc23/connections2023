@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1575 399.68">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #e6e7e8;
+        font-family: Comfortaa-Regular, Comfortaa;
+        font-size: 270px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        mix-blend-mode: overlay;
+        opacity: .3;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="body_copy" data-name="body copy">
+        <text class="cls-4" transform="translate(1.23 328.94)"><tspan class="cls-2" x="0" y="0">conn</tspan><tspan class="cls-5" x="644.48" y="0">e</tspan><tspan class="cls-2" x="788.66" y="0">ctions</tspan></text>
+        <text class="cls-4" transform="translate(0 240.44)"><tspan class="cls-2" x="0" y="0">conn</tspan><tspan class="cls-5" x="644.48" y="0">e</tspan><tspan class="cls-2" x="788.66" y="0">ctions</tspan></text>
+        <text class="cls-3" transform="translate(1.67 284.44)"><tspan class="cls-2" x="0" y="0">conn</tspan><tspan class="cls-5" x="644.48" y="0">e</tspan><tspan class="cls-2" x="788.66" y="0">ctions</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
